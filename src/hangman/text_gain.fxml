@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="165.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.TextGainController">
+    <stylesheets>
+        <URL value="@text gain.css" />
+    </stylesheets>
+   <children>
+      <ImageView fx:id="img" fitHeight="395.0" fitWidth="1038.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@DepUVzq.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="first_name" focusColor="#b5650a" labelFloat="true" layoutX="141.0" layoutY="98.0" prefHeight="36.0" prefWidth="388.0" promptText="Enter First Player Name" unFocusColor="#b5650a">
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="second_name" focusColor="#d85a0a" labelFloat="true" layoutX="141.0" layoutY="220.0" prefHeight="36.0" prefWidth="388.0" promptText="Enter Second Player Name" unFocusColor="#b5650a">
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </JFXTextField>
+      <JFXButton fx:id="submit" buttonType="RAISED" layoutX="444.0" layoutY="283.0" onAction="#onclick" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #b5650a; -fx-background-radius: 3;" text="Submit" textFill="#991818">
+         <effect>
+            <DropShadow color="#b5650a" />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

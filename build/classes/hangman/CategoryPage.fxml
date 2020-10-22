@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.CategoryPageController">
+    <stylesheets>
+        <URL value="@categorypage.css" />
+    </stylesheets>
+   <children>
+      <ImageView disable="true" fitHeight="741.0" fitWidth="1186.0" layoutY="-4.0" onMouseClicked="#cric" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ipxixuzcaaseyjjxwmwo.jpg" />
+         </image>
+         <effect>
+            <DropShadow color="#545353" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Cricket" accessibleText="Cricket" fitHeight="114.0" fitWidth="286.0" layoutX="609.0" layoutY="43.0" onMouseClicked="#cric" onMouseEntered="#hoverover" onMouseExited="#hoveroveir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download.jpg" />
+         </image>
+         <effect>
+            <DropShadow color="#c28108" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Reflection fraction="0.44" topOffset="10.0" topOpacity="0.12" />
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Football" accessibleText="Football" fitHeight="136.0" fitWidth="286.0" layoutX="281.0" layoutY="43.0" onMouseClicked="#cric" onMouseEntered="#hoverover" onMouseExited="#hoveroveir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Football-Law-1920x1080-1024x576.jpg" />
+         </image>
+         <effect>
+            <DropShadow color="#c28108" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Reflection fraction="0.44" topOffset="10.0" topOpacity="0.12" />
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Movies" accessibleText="Movies" fitHeight="136.0" fitWidth="225.0" layoutX="41.0" layoutY="69.0" onMouseClicked="#cric" onMouseEntered="#hoverover" onMouseExited="#hoveroveir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@movies_logo.gif" />
+         </image>
+         <effect>
+            <DropShadow color="#c28108" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Reflection fraction="0.44" topOffset="10.0" topOpacity="0.12" />
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Countries" accessibleText="Countries" fitHeight="136.0" fitWidth="220.0" layoutX="913.0" layoutY="69.0" onMouseClicked="#cric" onMouseEntered="#hoverover" onMouseExited="#hoveroveir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@countries.png" />
+         </image>
+         <effect>
+            <DropShadow color="#c28108" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Reflection fraction="0.44" topOffset="10.0" topOpacity="0.12" />
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Pornstars" accessibleText="Pornstars" fitHeight="117.0" fitWidth="218.0" layoutX="39.0" layoutY="542.0" onMouseClicked="#cric" onMouseEntered="#hoverover" onMouseExited="#hoveroveir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@maxresdefault.jpg" />
+         </image>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#c28108" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Reflection fraction="0.44" topOffset="10.0" topOpacity="0.12">
+                     <input>
+                        <GaussianBlur radius="8.46" />
+                     </input>
+                  </Reflection>
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Flowers" accessibleText="Flowers" fitHeight="143.0" fitWidth="233.0" layoutX="907.0" layoutY="318.0" onMouseClicked="#cric" onMouseEntered="#hoverover" onMouseExited="#hoveroveir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@black-flowers-names-13-hd-wallpaper.jpg" />
+         </image>
+         <effect>
+            <DropShadow color="#c28108" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Reflection fraction="0.44" topOffset="10.0" topOpacity="0.12" />
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Text disable="true" fill="#fff200" layoutX="989.0" layoutY="306.0" strokeType="OUTSIDE" text="Flowers">
+         <effect>
+            <DropShadow color="#322308" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Glow level="1.0" />
+               </input>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#fff200" layoutX="108.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movies">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="#322308" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Glow level="1.0" />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <ImageView fx:id="Fruits" accessibleText="Fruits" fitHeight="143.0" fitWidth="218.0" layoutX="40.0" layoutY="315.0" onMouseClicked="#cric" onMouseEntered="#hoverover" onMouseExited="#hoveroveir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1.jpg" />
+         </image>
+         <effect>
+            <DropShadow color="#c28108" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Reflection fraction="0.44" topOffset="10.0" topOpacity="0.12" />
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Text disable="true" fill="#fff200" layoutX="115.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fruits">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="#322308" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Glow level="1.0" />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Text disable="true" fill="#fff200" layoutX="972.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Countries">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <Glow level="1.0">
+               <input>
+                  <DropShadow color="#322308" offsetX="2.0" offsetY="2.0" spread="0.24" />
+               </input>
+            </Glow>
+         </effect>
+      </Text>
+      <Text fill="#fff200" layoutX="388.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Football">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="#322308" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Glow level="1.0" />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Text fill="#fff200" layoutX="731.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cricket">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="#322308" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Glow level="1.0" />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <ImageView fx:id="Tennis" accessibleText="Tennis" fitHeight="96.0" fitWidth="278.0" layoutX="282.0" layoutY="576.0" onMouseClicked="#cric" onMouseEntered="#hoverover" onMouseExited="#hoveroveir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@6.jpg" />
+         </image>
+         <effect>
+            <DropShadow color="#c28108" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Reflection fraction="0.44" topOffset="10.0" topOpacity="0.12" />
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="136.0" fitWidth="249.0" layoutX="468.0" layoutY="298.0" onMouseClicked="#two" onMouseEntered="#hoverover" onMouseExited="#hoveroveir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@12668472371341591624two%20player%20game%20outline.svg.hi.png" />
+         </image>
+      </ImageView>
+      <Text fill="#ffc800" layoutX="551.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Two Player" wrappingWidth="84.25780063426646">
+         <effect>
+            <DropShadow color="#ffdd00" spread="0.36">
+               <input>
+                  <Glow level="0.74" />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Text fill="#fff200" layoutX="419.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tennis">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="#322308" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Glow level="1.0" />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <ImageView fx:id="Animals" accessibleText="Animals" fitHeight="96.0" fitWidth="296.0" layoutX="595.0" layoutY="576.0" onMouseClicked="#cric" onMouseEntered="#hoverover" onMouseExited="#hoveroveir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@asd___dog__animals__black_background__minimalist_minimalism_simple.jpg" />
+         </image>
+         <effect>
+            <DropShadow color="#c28108" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Reflection fraction="0.44" topOpacity="0.12" />
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Text fill="#fff200" layoutX="730.0" layoutY="557.0" onMouseClicked="#cric" strokeType="OUTSIDE" strokeWidth="0.0" text="Animals">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <Glow level="1.0">
+               <input>
+                  <DropShadow color="#322308" offsetX="2.0" offsetY="2.0" spread="0.24" />
+               </input>
+            </Glow>
+         </effect>
+      </Text>
+      <Text fill="#fff200" layoutX="98.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pornstars">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="#322308" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Glow level="1.0" />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+      <ImageView fx:id="exit" fitHeight="42.0" fitWidth="48.0" layoutX="1144.0" onMouseClicked="#crici" onMouseEntered="#hoverover" onMouseExited="#hoveroveir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@exit.png" />
+         </image>
+         <effect>
+            <DropShadow color="#c20a0a" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Reflection />
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Random" accessibleText="Random" fitHeight="109.0" fitWidth="218.0" layoutX="913.0" layoutY="542.0" onMouseClicked="#cric" onMouseEntered="#hoverover" onMouseExited="#hoveroveir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@402dda05-adf8-413d-8796-6eefdbd244a3.gif" />
+         </image>
+         <effect>
+            <DropShadow color="#c28108" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Reflection fraction="0.44" topOpacity="0.12" />
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Text fill="#fff200" layoutX="985.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Random">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="#322308" offsetX="2.0" offsetY="2.0" spread="0.24">
+               <input>
+                  <Glow level="1.0" />
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+   </children>
+</AnchorPane>

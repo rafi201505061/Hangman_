@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" fx:id="temp" prefHeight="308.0" prefWidth="494.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="hangman.StringgetterController">
+   <children>
+      <ImageView fx:id="img" fitHeight="308.0" fitWidth="605.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@DepUVzq.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="stri" focusColor="#d85a0a" labelFloat="true" layoutX="87.0" layoutY="79.0" prefHeight="29.0" prefWidth="346.0" promptText="Enter the word" unFocusColor="#b5650a">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXTextField>
+      <JFXButton fx:id="submiti" buttonType="RAISED" layoutX="357.0" layoutY="154.0" onAction="#onclick" prefHeight="16.0" prefWidth="76.0" style="-fx-background-color: #b5650a;" text="Submit" />
+   </children>
+</AnchorPane>
